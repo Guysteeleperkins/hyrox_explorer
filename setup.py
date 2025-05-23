@@ -10,7 +10,7 @@ setup(
     description=("An ETL project for extracting, transforming, and loading data."),
     author="Guy Steele-Perkins",
     author_email="guysteeleperkins@hotmail.com",
-    url="https://github.com/de-2502-a/hyrox_explorer",
+    url="https://github.com/Guysteeleperkins/hyrox_explorer",
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
