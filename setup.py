@@ -5,12 +5,12 @@ with open("requirements.txt") as f:
     install_requires = f.read().splitlines()
 
 setup(
-    name="etl_example",
+    name="hyrox_explorer",
     version="0.1.0",
     description=("An ETL project for extracting, transforming, and loading data."),
-    author="Your Name",
-    author_email="ewright@digitalfutures.com",
-    url="https://github.com/de-2502-a/etl-project-demo",
+    author="Guy Steele-Perkins",
+    author_email="guysteeleperkins@hotmail.com",
+    url="https://github.com/de-2502-a/hyrox_explorer",
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
