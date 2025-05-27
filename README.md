@@ -1,5 +1,18 @@
 # Hyrox Results Explorer
 
+# Planning 
+
+For my capstone project I used my own garmin data, this was a great experience to practice and learn more about the ETL process, however due to time constraints i used downloaded CSV files from my garmin account and therefore the extraction part did not really exist - I wanted to look at data that has come from the fitness industry and I have recently been excited to try out Hyrox. I came across someones post on Kaggle.com on how to scrape the data from the Hyrox website - I will credit this person and code.
+
+I am taking the opportunity to use and tweak existing code to help learn more about webscraping and therefore extraction, whilst also building on my transformation, cleaning and loading skills.
+
+# Project Timeline (I will update this as I go on)
+
+Below you will see how to set up this project, the first time I did this it worked perfectly fine for my capstone project but I came across a problem and needed to delete the virtual environment, this results in breaking everything when I tried again and I had to run PYTHONPATH so the script folder was recognized. I have now fixed this problem, it was due to not modifying the setup.py file for my specific project. If anyone wants to use this or recreate this project, make sure to edit the setup.py file before going to initial project set guide below
+
+I used the initial-project-setup branch to configure and fix this problem and eventually run_etl dev and run_tests all worked and I can now get onto using and tweaking the web-scraping code. I will be using web-scraping branches to complete this step.
+
+
 # Initial project setup 
 
 
@@ -54,3 +67,9 @@ Running SQL linting checks
 Python linting checks passed! 
 SQL linting checks passed! All Finished!
 ```
+
+# Hyrox webscraping
+
+https://www.kaggle.com/code/jgug05/hyrox-data-scraping
+
+The link above walks through how the code works and should be used. It also describes manually inputting each "Event ID" - this is something I want to change and allow the code to iterate through all events to collect all possible data for a larger analysis
