@@ -1,20 +1,23 @@
 # Hyrox Results Explorer
 
-# Planning 
+## Planning 
 
 For my capstone project I used my own garmin data, this was a great experience to practice and learn more about the ETL process, however due to time constraints i used downloaded CSV files from my garmin account and therefore the extraction part did not really exist - I wanted to look at data that has come from the fitness industry and I have recently been excited to try out Hyrox. I came across someones post on Kaggle.com on how to scrape the data from the Hyrox website - I will credit this person and code.
 
 I am taking the opportunity to use and tweak existing code to help learn more about webscraping and therefore extraction, whilst also building on my transformation, cleaning and loading skills.
 
-# Project Timeline (I will update this as I go on)
+## Project Timeline (I will update this as I go on)
 
 Below you will see how to set up this project, the first time I did this it worked perfectly fine for my capstone project but I came across a problem and needed to delete the virtual environment, this results in breaking everything when I tried again and I had to run PYTHONPATH so the script folder was recognized. I have now fixed this problem, it was due to not modifying the setup.py file for my specific project. If anyone wants to use this or recreate this project, make sure to edit the setup.py file before going to initial project set guide below
 
 I used the initial-project-setup branch to configure and fix this problem and eventually run_etl dev and run_tests all worked and I can now get onto using and tweaking the web-scraping code. I will be using web-scraping branches to complete this step.
 
+Due to my inexperience with certain technologies, after an attempt to scrape through all different events and retrieve the ID, I gave up and went through manually to create a numbers file. I then converted this to a CSV and added it into my data/raw folder.
 
-# Initial project setup 
+On the page (https://www.kaggle.com/code/jgug05/hyrox-data-scraping) that I will use the code for web-scraping there is a helper function that has all ID listed but not complete. I will use the CSV file and create a Class Event with all these listed - this will be then used within the web-scraping code to collect all data on these specific events by creating a URL with the correct details for each individual page.
 
+
+## Initial project setup 
 
 
 To get the ETL project structure on your machine:
@@ -68,7 +71,7 @@ Python linting checks passed!
 SQL linting checks passed! All Finished!
 ```
 
-# Hyrox webscraping
+## Hyrox webscraping
 
 https://www.kaggle.com/code/jgug05/hyrox-data-scraping
 
